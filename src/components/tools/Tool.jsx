@@ -1,44 +1,15 @@
 import React from 'react'
+import Card from './card'
 
 
-export default function Tool({ tool }) {
-       let tagColor = "";
+export default function Tool({ tools, isActive, setisActive }) {
 
-    if (tool.tag === "Popular") {
-        tagColor = "bg-purple-100 text-purple-600";
-    } else if (tool.tag === "Best Seller") {
-        tagColor = "bg-yellow-100 text-yellow-600";
-    } else {
-        tagColor = "bg-green-100 text-green-600";
-    }
     return (
-        <div>
-            <div className="card w-96 bg-base-100 shadow-sm text-left space-y-2">
-                <div className="card-body">
-                    <span className={`badge badge-xs ${tagColor} ml-[80%]`}  >{tool.tag}</span>
-                    <div className="">
-                        <h2 className="text-2xl font-bold">{tool.name}</h2>
-                        <p className='my-2'>{tool.description}</p>
-                        <span className="text-xl">${tool.price}/{tool.period}</span>
-                    </div>
-                    <ul className="mt-2 flex flex-col gap-2 text-xs text-left">
-                       {
-                        tool.features.map(feature => {
-                            return <div>
-                                 <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>{feature}</span>
-                        </li>
-                            </div>
-                        })
-                       }
-                        
-                    </ul>
-                    <div className="mt-2">
-                        <button className="btn btn-primary btn-block w-full rounded-4xl">Buy Now</button>
-                    </div>
-                </div>
-            </div>
+        <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mx-auto max-w-11/12 gap-6'>
+         {
+            tools.map(tool => (<Card tool={tool} isActive={isActive} setisActive={setisActive}></Card>))
+         }
         </div>
+       
     )
 }

@@ -12,7 +12,7 @@
       "50+ writing templates",
       "Grammar checker"
     ],
-    "icon": "ai"
+    "icon": "/products/writing.png"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
       "Monthly updates",
       "Commercial license"
     ],
-    "icon": "design"
+    "icon": "/products/design-tool.png"
   },
   {
     "id": 3,
@@ -42,7 +42,7 @@
       "Commercial use",
       "No attribution"
     ],
-    "icon": "assets"
+    "icon": "/products/shopping.png"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
       "API access",
       "Custom workflows"
     ],
-    "icon": "automation"
+    "icon": "/products/portfolio.png"
   },
   {
     "id": 5,
@@ -72,7 +72,7 @@
       "ATS optimization",
       "Export to PDF"
     ],
-    "icon": "resume"
+    "icon": "/products/operation.png"
   },
   {
     "id": 6,
@@ -87,36 +87,6 @@
       "Scheduling included",
       "Analytics dashboard"
     ],
-    "icon": "social"
-  },
-  {
-    "id": 7,
-    "name": "SEO Optimization Suite",
-    "description": "Boost your website ranking with advanced SEO tools and keyword tracking.",
-    "price": 25,
-    "period": "monthly",
-    "tag": "Popular",
-    "tagType": "popular",
-    "features": [
-      "Keyword tracking",
-      "Site audit",
-      "Competitor analysis"
-    ],
-    "icon": "seo"
-  },
-  {
-    "id": 8,
-    "name": "Email Marketing Pro",
-    "description": "Create and manage email campaigns with automation and analytics.",
-    "price": 20,
-    "period": "monthly",
-    "tag": "New",
-    "tagType": "new",
-    "features": [
-      "Email templates",
-      "Automation flows",
-      "Performance analytics"
-    ],
-    "icon": "email"
+    "icon": "/products/social-media.png"
   }
 ]
