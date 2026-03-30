@@ -7,7 +7,7 @@ export default function Tool({ tools, isActive, setisActive,isSelected, setisSel
     return (
         <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mx-auto max-w-11/12 gap-6'>
          {
-            tools.map(tool => (<Card tool={tool} isActive={isActive} setisActive={setisActive} isSelected={isSelected} setisSelected={setisSelected}></Card>))
+            tools.map((tool) => (<Card key={tool.id}  tool={tool} isActive={isActive} setisActive={setisActive} isSelected={isSelected} setisSelected={setisSelected}></Card>))
          }
         </div>
        
