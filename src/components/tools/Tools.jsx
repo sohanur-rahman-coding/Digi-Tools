@@ -4,10 +4,10 @@ import SelectedCard from './SelectedCard'
 
 export default function Tools({ promiseTools }) {
     const tools = use(promiseTools)
-    console.log(tools)
+
     const [isActive, setisActive] = useState('Products')
     const [isSelected, setisSelected] = useState([])
- 
+
     return (
         <div className='mt-10 text-center space-y-4'>
             <h2 className='text-5xl my-4'>Premium Digital Tools</h2>
@@ -21,9 +21,9 @@ export default function Tools({ promiseTools }) {
             </div>
             <div >
                 {
-                     isActive === 'Products'  ? <Tool tools={tools} isActive={isActive} setisActive={setisActive} isSelected={isSelected} setisSelected={setisSelected}></Tool> :
+                    isActive === 'Products' ? <Tool tools={tools} isActive={isActive} setisActive={setisActive} isSelected={isSelected} setisSelected={setisSelected}></Tool> :
                         <SelectedCard tools={tools} isActive={isActive} setisActive={setisActive} isSelected={isSelected} setisSelected={setisSelected}></SelectedCard>
-                    
+
                 }
             </div>
         </div>

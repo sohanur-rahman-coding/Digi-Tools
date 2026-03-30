@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 
-export default function Card({ tool,isSelected, setisSelected }) {
+export default function Card({ tool, isSelected, setisSelected }) {
     const [selectedTool, setselectedTool] = useState(false)
-    const handleSelected  =()=>{
-        
+    const handleSelected = () => {
+
+
+
         setselectedTool(true)
+        setisSelected([...isSelected, tool])
     }
 
     let tagColor = "";
@@ -45,7 +48,7 @@ export default function Card({ tool,isSelected, setisSelected }) {
                     </ul>
                     <div className="mt-2">
                         <button
-                            onClick={handleSelected 
+                            onClick={handleSelected
 
                             }
                             disabled={selectedTool}
