@@ -20,7 +20,7 @@ const GetStarted = () => {
                     
                     {/* Step 1 */}
                     <div className="bg-white p-10 rounded-3xl border border-gray-100 shadow-sm relative flex flex-col items-center">
-                        <span className="absolute top-6 right-6 bg-[#8B31FF] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
+                        <span className="absolute top-6 right-6 bg-primary  text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
                             01
                         </span>
                         <div className="w-24 h-24 bg-[#F3E8FF] rounded-full flex items-center justify-center mb-8">
@@ -34,7 +34,7 @@ const GetStarted = () => {
 
                     {/* Step 2 */}
                     <div className="bg-white p-10 rounded-3xl border border-gray-100 shadow-sm relative flex flex-col items-center">
-                        <span className="absolute top-6 right-6 bg-[#8B31FF] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
+                        <span className="absolute top-6 right-6 bg-primary  text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
                             02
                         </span>
                         <div className="w-24 h-24 bg-[#F3E8FF] rounded-full flex items-center justify-center mb-8">
@@ -48,7 +48,7 @@ const GetStarted = () => {
 
                     {/* Step 3 */}
                     <div className="bg-white p-10 rounded-3xl border border-gray-100 shadow-sm relative flex flex-col items-center">
-                        <span className="absolute top-6 right-6 bg-[#8B31FF] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
+                        <span className="absolute top-6 right-6 bg-primary  text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
                             03
                         </span>
                         <div className="w-24 h-24 bg-[#F3E8FF] rounded-full flex items-center justify-center mb-8">

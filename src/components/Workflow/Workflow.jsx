@@ -1,6 +1,6 @@
 const Workflow= () => {
     return (
-        <section className="bg-[#8B31FF] py-20 px-6">
+        <section className="bg-primary py-12 px-6">
             <div className="container mx-auto text-center text-white">
                 
                 {/* Heading */}
@@ -19,7 +19,7 @@ const Workflow= () => {
                     <button className="btn bg-white text-[#8B31FF] px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-lg w-full sm:w-auto">
                         Explore Products
                     </button>
-                    <button className="btn bg-[#8B31FF] border-2 border-white/50 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition w-full sm:w-auto">
+                    <button className="btn bg-primary/10 border-2 border-white/50 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition w-full sm:w-auto">
                         View Pricing
                     </button>
                 </div>
