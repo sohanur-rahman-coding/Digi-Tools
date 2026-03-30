@@ -25,7 +25,7 @@ export default function Card({ tool, isSelected, setisSelected }) {
         <div >
             <div className="card w-96 bg-base-100 shadow-sm text-left space-y-2">
                 <div className="card-body">
-                    <span className={`badge badge-xs ${tagColor} ml-[80%]`}  >{tool.tag}</span>
+                    <span className={`badge badge-xs ${tagColor} ml-[75%]`}  >{tool.tag}</span>
                     <img className='max-w-8' src={tool.icon} alt="" />
                     <div className="">
                         <h2 className="text-2xl font-bold">{tool.name}</h2>
