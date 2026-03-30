@@ -6,6 +6,7 @@ export default function Tools({ promiseTools }) {
     const tools = use(promiseTools)
     console.log(tools)
     const [isActive, setisActive] = useState('Products')
+    const [isSelected, setisSelected] = useState([])
  
     return (
         <div className='mt-10 text-center space-y-4'>
@@ -20,8 +21,8 @@ export default function Tools({ promiseTools }) {
             </div>
             <div >
                 {
-                     isActive === 'Products'  ? <Tool tools={tools} isActive={isActive} setisActive={setisActive}></Tool> :
-                        <SelectedCard tools={tools} isActive={isActive} setisActive={setisActive}></SelectedCard>
+                     isActive === 'Products'  ? <Tool tools={tools} isActive={isActive} setisActive={setisActive} isSelected={isSelected} setisSelected={setisSelected}></Tool> :
+                        <SelectedCard tools={tools} isActive={isActive} setisActive={setisActive} isSelected={isSelected} setisSelected={setisSelected}></SelectedCard>
                     
                 }
             </div>
