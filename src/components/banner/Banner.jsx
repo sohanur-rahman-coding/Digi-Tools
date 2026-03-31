@@ -1,5 +1,8 @@
 import React from 'react'
 import banner from '../../assets/banner.png'
+import { CiPlay1 } from "react-icons/ci";
+import { GoDotFill } from "react-icons/go";
+
 
 export default function Banner() {
     return (
@@ -11,6 +14,9 @@ export default function Banner() {
                         className=" rounded-lg shadow-2xl"
                     />
                     <div className='mt-8 lg:mt-0'>
+                        <button className="btn btn-soft btn-primary rounded-4xl"><GoDotFill />
+
+                            New: AI-Powered Tools Available</button>
                         <h1 className="text-6xl font-bold">Supercharge Your Digital Workflow</h1>
                         <p className="py-6">
                             Access premium AI tools, design assets, templates, and productivity <br />
@@ -19,7 +25,8 @@ export default function Banner() {
                             Explore Products
                         </p>
                         <button className="btn btn-primary rounded-4xl">Explore Products</button>
-                        <button className="btn bg-none border border-primary rounded-4xl ml-2 text-primary">Watch Demo</button>
+                        <button className="btn bg-none border border-primary rounded-4xl ml-2 text-primary"><CiPlay1 />
+                            Watch Demo</button>
                     </div>
                 </div>
             </div>

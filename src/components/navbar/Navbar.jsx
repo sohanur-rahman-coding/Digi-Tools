@@ -1,8 +1,10 @@
 import logo from '../../assets/DigiTools.png'
+import { HiOutlineShoppingCart } from "react-icons/hi2";
 
-export default function Navbar() {
+
+export default function Navbar({isSelected, setisSelected}) {
     return (
-        <div className=' bg-base-100 shadow-sm'>
+        <div className=' bg-base-100 shadow-sm sticky top-0 z-10'>
             <div className="navbar w-11/12 mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -30,7 +32,14 @@ export default function Navbar() {
                         <li><a>FAQ</a></li>
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end space-x-2">
+                    <div className='relative p-4 hidden lg:flex'>
+                        <HiOutlineShoppingCart className='cursor-pointer text-2xl' />
+                        <div className="badge badge-error badge-xs absolute top-1 right-2">{isSelected.length}</div>
+
+                    </div>
+
+                    <a className='btn hidden lg:flex outline-none bg-transparent border-none shadow-none '>Login</a>
                     <a className="btn btn-primary rounded-4xl">Get Started</a>
                 </div>
             </div>

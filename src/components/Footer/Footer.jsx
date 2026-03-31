@@ -1,5 +1,4 @@
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa"; import { FaTwitterSquare } from "react-icons/fa";
+
 
 
 
@@ -8,11 +7,11 @@ const Footer = () => {
     return (
         <footer className="bg-[#0B1221] text-gray-400 w-full py-8 px-6  md:px-6">
             <div className="container">
-                <div className="text-center md:text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-2 mb-6">
+                <div className="md:mx-16 text-left grid grid-cols-2 lg:grid-cols-6  gap-4 md:gap-2 mb-6">
 
                     {/* Brand Section */}
                     <div className="lg:col-span-2">
-                        <h2 className="text-white text-4xl font-bold mb-5">DigiTools</h2>
+                        <h2 className="text-white text-4xl font-bold mb-3">DigiTools</h2>
                         <p className="max-w-xs leading-relaxed text-lg">
                             Premium digital tools for creators, professionals, and businesses.
                             Work smarter with our suite of powerful tools.
@@ -21,7 +20,7 @@ const Footer = () => {
 
                     {/* Product Links */}
                     <div>
-                        <h3 className="text-white text-xl font-semibold mb-6">Product</h3>
+                        <h3 className="text-white text-xl font-semibold mb-3">Product</h3>
                         <ul className="space-y-2 text-lg">
                             <li><a href="#" className="hover:text-white transition">Features</a></li>
                             <li><a href="#" className="hover:text-white transition">Pricing</a></li>
@@ -32,7 +31,7 @@ const Footer = () => {
 
                     {/* Company Links */}
                     <div>
-                        <h3 className="text-white text-xl font-semibold mb-6">Company</h3>
+                        <h3 className="text-white text-xl font-semibold mb-3">Company</h3>
                         <ul className="space-y-2 text-lg">
                             <li><a href="#" className="hover:text-white transition">About</a></li>
                             <li><a href="#" className="hover:text-white transition">Blog</a></li>
@@ -43,7 +42,7 @@ const Footer = () => {
 
                     {/* Resources & Social Links */}
                     <div>
-                        <h3 className="text-white text-xl font-semibold mb-6">Resources</h3>
+                        <h3 className="text-white text-xl font-semibold mb-3">Resources</h3>
                         <ul className="space-y-2 text-lg mb-8">
                             <li><a href="#" className="hover:text-white transition">Documentation</a></li>
                             <li><a href="#" className="hover:text-white transition">Help Center</a></li>
@@ -55,7 +54,7 @@ const Footer = () => {
 
                     {/* social links */}
 
-                    <div>
+                    <div className="md:mx-16">
                         <h3 className="text-white text-xl font-semibold mb-5">Social Links</h3>
                         <div className="flex gap-4 justify-center md:justify-start">
                             <a className="">

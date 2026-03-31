@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
+import { IoCloudDone } from "react-icons/io5";
+import { toast } from 'react-toastify';
+
+
+
 
 export default function Card({ tool, isSelected, setisSelected }) {
     const [selectedTool, setselectedTool] = useState(false)
     const handleSelected = () => {
 
 
-
+        toast.success('Added to Cart')
         setselectedTool(true)
         setisSelected([...isSelected, tool])
     }
@@ -23,7 +28,7 @@ export default function Card({ tool, isSelected, setisSelected }) {
 
     return (<div>
         <div >
-            <div className="card w-96 bg-base-100 shadow-sm text-left space-y-4">
+            <div className="card max-w-96 bg-base-100 inset-shadow-sm text-left space-y-4 mx-auto">
                 <div className="card-body">
                     <span className={`badge badge-xs ${tagColor} ml-[75%]`}  >{tool.tag}</span>
                     <img className='max-w-8' src={tool.icon} alt="" />
@@ -35,9 +40,9 @@ export default function Card({ tool, isSelected, setisSelected }) {
                     <ul className="mt-2 flex flex-col gap-2 text-xs text-left">
 
                         {
-                            tool.features.map((feature, index) => { 
-                                return  <div key={index}> 
-                                    
+                            tool.features.map((feature, index) => {
+                                return <div key={index}>
+
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                                         <span>{feature}</span>
@@ -52,9 +57,16 @@ export default function Card({ tool, isSelected, setisSelected }) {
                             onClick={handleSelected
 
                             }
-                            disabled={selectedTool}
 
-                            className="btn btn-primary btn-block w-full rounded-4xl">{selectedTool ? 'Subscribed' : 'Buy Now'}</button>
+
+                            className={`btn  ${selectedTool ? 'btn-success' : 'btn-primary'}  btn-block w-full rounded-4xl`}>{selectedTool ?
+                             <>
+                            Added to Cart  <IoCloudDone className='text-[20px]' />
+
+                             </> 
+                             : 
+                             'Buy Now'}
+                             </button>
                     </div>
                 </div>
             </div>

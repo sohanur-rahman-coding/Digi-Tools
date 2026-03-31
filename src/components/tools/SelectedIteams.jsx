@@ -1,8 +1,11 @@
 import React from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+
 
 export default function SelectedIteams({selectedIteams,setisSelected,isSelected}) {
     const handleDeleteSelectedTools = (selectedIteams)=>{
-        console.log(selectedIteams)
+                toast.info('Iteam removed from cart !')
+        
         const filterSelected = isSelected.filter(removeTools => removeTools.name !== selectedIteams.name)
         
         setisSelected(filterSelected)

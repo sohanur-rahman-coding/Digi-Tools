@@ -1,12 +1,12 @@
 const Pricing = () => {
     return (
-        <section className="bg-white pt-2 pb-12 px-6">
+        <section className="bg-white pt-2 pb-12 px-6 relative ">
             <div className="text-center pb-12">
                 <h2 className="text-5xl font-bold">Simple, Transparent Pricing</h2>
                 <p className="text-2xl font-semibold">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
             <div className="container mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     
                     {/* Starter Card */}
                     <div className="border border-gray-200 rounded-3xl p-10 flex flex-col justify-between">
@@ -33,11 +33,11 @@ const Pricing = () => {
                     </div>
 
                     {/* Pro Card */}
-                    <div className="border border-gray-200 rounded-3xl p-10 flex flex-col justify-between bg-primary text-white  hover:text-black transition duration-300">
+                    <div className="border border-gray-200 rounded-3xl p-10 flex flex-col justify-between bg-primary text-white  hover:text-black transition duration-300 ">
                         <div>
                             <div className="flex items-center justify-between space-y-2">
                                 <h3 className="text-2xl font-bold">Pro</h3>
-                                <span className="text-black bg-[#FFC64C] text-xs font-bold px-4  rounded-full ">Most Popular</span>
+                                <span className="text-black bg-[#FFC64C] text-xs font-bold px-4 lg:px-6 lg:py-2  rounded-full lg:absolute lg:top-30 lg:left-[45%]">Most Popular</span>
                             </div>
                             <p className="  mb-2">Best for professionals</p>
                             
