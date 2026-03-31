@@ -2,7 +2,7 @@ import React from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 
 
-export default function SelectedIteams({selectedIteams,setisSelected,isSelected}) {
+export default function SelectedCarts({selectedIteams,setisSelected,isSelected}) {
     const handleDeleteSelectedTools = (selectedIteams)=>{
                 toast.info('Iteam removed from cart !')
         

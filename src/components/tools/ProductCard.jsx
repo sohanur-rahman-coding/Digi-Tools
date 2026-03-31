@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 
 
-export default function Card({ tool, isSelected, setisSelected }) {
+export default function ProductCard({ tool, isSelected, setisSelected }) {
     const [selectedTool, setselectedTool] = useState(false)
     const handleSelected = () => {
 

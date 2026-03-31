@@ -1,10 +1,10 @@
 import React from 'react'
-import SelectedIteams from './SelectedIteams'
+import SelectedCarts from './SelectedCarts'
 import Empty from './empty';
 import { ToastContainer, toast } from 'react-toastify';
 
 
-export default function SelectedCard({ isSelected, setisSelected }) {
+export default function SelectedTools({ isSelected, setisSelected }) {
   const totalPrice = isSelected.reduce((sum, product) => {
     return sum + product.price;
   }, 0);
@@ -21,7 +21,7 @@ export default function SelectedCard({ isSelected, setisSelected }) {
       <Empty></Empty> :
          (<div><h2 className='text-2xl font-bold text-left'>Your Cart</h2>
         {
-          isSelected.map((selectedItems, ind) => <SelectedIteams key={ind} setisSelected={setisSelected} selectedIteams={selectedItems} isSelected={isSelected} ></SelectedIteams>)
+          isSelected.map((selectedItems, ind) => <SelectedCarts key={ind} setisSelected={setisSelected} selectedIteams={selectedItems} isSelected={isSelected} ></SelectedCarts>)
         }
         <div className='font-semibold text-2xl flex justify-between mx-12'>
           <p>Total : </p>

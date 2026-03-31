@@ -1,9 +1,9 @@
 import React, { use, useState } from 'react'
-import Tool from './tool'
-import SelectedCard from './SelectedCard'
+import Products from './Products'
+import SelectedTools from './SelectedTools'
 import { toast } from 'react-toastify';
 
-export default function Tools({ promiseTools, isSelected, setisSelected }) {
+export default function PrimiumTools({ promiseTools, isSelected, setisSelected }) {
     const tools = use(promiseTools)
 
     const [isActive, setisActive] = useState('Products')
@@ -28,8 +28,8 @@ export default function Tools({ promiseTools, isSelected, setisSelected }) {
             </div>
             <div className='mx-auto flex flex-col justify-center space-y-4' >
                 {
-                    isActive === 'Products' ? <Tool tools={tools} isActive={isActive} setisActive={setisActive} isSelected={isSelected} setisSelected={setisSelected}></Tool> :
-                        <SelectedCard tools={tools} isActive={isActive} setisActive={setisActive} isSelected={isSelected} setisSelected={setisSelected}></SelectedCard>
+                    isActive === 'Products' ? <Products tools={tools} isActive={isActive} setisActive={setisActive} isSelected={isSelected} setisSelected={setisSelected}></Products> :
+                        <SelectedTools tools={tools} isActive={isActive} setisActive={setisActive} isSelected={isSelected} setisSelected={setisSelected}></SelectedTools>
 
                 }
             </div>

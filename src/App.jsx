@@ -3,14 +3,15 @@ import './App.css'
 import Banner from './components/banner/Banner'
 import Footer from './components/Footer/Footer'
 import GetStarted from './components/get started/GetStarted'
-import Navbar from './components/navbar/navbar'
+import Navbar from './components/navbar/Navbar'
+
 import Pricing from './components/Pricing.jsx/Pricing'
 import Rating from './components/rating/Rating'
 
-import Tools from './components/tools/Tools'
+import PrimiumTools from './components/tools/PrimiumTools'
 import Workflow from './components/Workflow/Workflow'
-import React, { useState } from 'react'
-import { ToastContainer, toast } from 'react-toastify';
+import { useState } from 'react'
+import { ToastContainer} from 'react-toastify';
 
 
 const fetchTools = async () => {
@@ -28,7 +29,7 @@ function App() {
       <Navbar isSelected={isSelected} setisSelected={setisSelected}></Navbar>
       <Banner></Banner>
       <Rating></Rating>
-      <Tools promiseTools={promiseTools} isSelected={isSelected} setisSelected={setisSelected}></Tools>
+      <PrimiumTools promiseTools={promiseTools} isSelected={isSelected} setisSelected={setisSelected}></PrimiumTools>
       <GetStarted></GetStarted>
       <Pricing></Pricing>
       <Workflow></Workflow>
