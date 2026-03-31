@@ -35,7 +35,9 @@ export default function Navbar({isSelected, setisSelected}) {
                 <div className="navbar-end space-x-2">
                     <div className='relative p-4 hidden lg:flex'>
                         <HiOutlineShoppingCart className='cursor-pointer text-2xl' />
-                        <div className="badge badge-error badge-xs absolute top-1 right-2">{isSelected.length}</div>
+                        {
+                            isSelected.length >= 1 ? <div className="badge badge-error badge-xs absolute top-1 right-2">{isSelected.length}</div> : '' 
+                        }
 
                     </div>
 

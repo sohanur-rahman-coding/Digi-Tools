@@ -59,7 +59,7 @@ export default function Card({ tool, isSelected, setisSelected }) {
                             }
 
 
-                            className={`btn  ${selectedTool ? 'btn-success' : 'btn-primary'}  btn-block w-full rounded-4xl`}>{selectedTool ?
+                            className={`btn  ${selectedTool ? 'bg-green-500' : 'btn-primary'}  btn-block w-full rounded-4xl`}>{selectedTool ?
                              <>
                             Added to Cart  <IoCloudDone className='text-[20px]' />
 
