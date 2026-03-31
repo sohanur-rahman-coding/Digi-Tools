@@ -9,17 +9,17 @@ export default function SelectedIteams({selectedIteams,setisSelected,isSelected}
     }
     
     return (
-        <div className="flex items-center my-6 gap-6 justify-between rounded-4xl p-6 bg-gray-200 text-black">
+        <div className="flex items-center my-6 gap-6 justify-between rounded-2xl p-3 bg-gray-200 text-black">
             <div className="flex items-center gap-6">
                 <img
                     src={selectedIteams.icon}
                     alt={selectedIteams.name}
-                    className="h-10 w-auto rounded-md"
+                    className="h-8 w-auto rounded-md"
                 />
                 <div className='text-left'>
-                    <h2 className="flex items-center gap-2 font-semibold text-[16px] md:text-xl">
+                    <h3 className="flex items-center gap-2 font-semibold">
                      {selectedIteams.name}
-                    </h2>
+                    </h3>
                     <p>${selectedIteams.price}</p>
                 </div>
             </div>

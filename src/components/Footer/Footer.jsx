@@ -57,7 +57,7 @@ const Footer = () => {
 
                     <div>
                         <h3 className="text-white text-xl font-semibold mb-5">Social Links</h3>
-                        <div className="flex gap-4 justify-center">
+                        <div className="flex gap-4 justify-center md:justify-start">
                             <a className="">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"

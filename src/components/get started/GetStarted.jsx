@@ -4,7 +4,7 @@ import RocketImage from "../../assets/rocket.png"
 
 const GetStarted = () => {
     return (
-        <section className="bg-[#F9FAFB] py-20 px-6">
+        <section className="bg-[#F9FAFB] py-12 my-12 mx-2 md:mx-12 rounded-2xl px-10">
             <div className="container mx-auto text-center">
                 
                 {/* Heading Section */}

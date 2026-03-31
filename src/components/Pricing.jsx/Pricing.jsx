@@ -1,6 +1,10 @@
 const Pricing = () => {
     return (
-        <section className="bg-white py-12 px-6">
+        <section className="bg-white pt-2 pb-12 px-6">
+            <div className="text-center pb-12">
+                <h2 className="text-5xl font-bold">Simple, Transparent Pricing</h2>
+                <p className="text-2xl font-semibold">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
+            </div>
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     
