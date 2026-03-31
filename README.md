@@ -1,16 +1,55 @@
-# React + Vite
+# 🚀 DigiTools – Premium Digital Tools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Name
 
-Currently, two official plugins are available:
+**DigiTools**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📝 Description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+DigiTools is a clean and modern React-based web application where users can explore **premium digital tools**, add them to a cart, and manage their selections. The UI is designed based on Figma, focusing on productivity, simplicity, and smooth user experience. It includes a dynamic product section and an interactive cart system with real-time updates.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Technologies Used
+
+* ⚛️ React.js
+* 🎨 Tailwind CSS
+* 🌼 DaisyUI
+* 📦 JavaScript (ES6+)
+* 🔔 React-Toastify
+* 📄 JSON (Product Data)
+
+---
+
+## ✨ Key Features
+
+### 🛍️ 1. Premium Product Showcase
+
+* “**Premium Digital Tools**” section with curated products
+* good responsive 3-column layout
+* Each card includes name, price, features, and tag
+
+### 🛒 2. Smart Cart System
+
+* “**Cart (2)**” dynamic count in navbar
+* Cart section shows:
+
+  * Product Name (e.g., AI Writing Pro, Design Templates Pack)
+  * Price ($29, $49)
+  * Remove option ❌
+* Total price calculation (e.g., **$78**)
+* “Proceed To Checkout” clears all items
+
+### 🔄 3. Section Toggle System
+
+* **Products** and **Cart** toggle buttons
+* Default → Products section visible
+* Cart shows empty message when no items selected
+
+---
+
+## 🌟 Final Note
+
+This project showcases real-world frontend development using React with dynamic UI updates, state management, and modern design practices. Perfect for portfolio and practice.

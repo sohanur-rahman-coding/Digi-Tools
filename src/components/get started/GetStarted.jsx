@@ -16,7 +16,7 @@ const GetStarted = () => {
                 </p>
 
                 {/* Steps Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
                     {/* Step 1 */}
                     <div className="bg-white p-10 rounded-3xl border border-gray-100 shadow-sm relative flex flex-col items-center">
