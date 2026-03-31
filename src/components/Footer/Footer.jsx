@@ -6,8 +6,8 @@ import { FaFacebookSquare } from "react-icons/fa"; import { FaTwitterSquare } fr
 
 const Footer = () => {
     return (
-        <footer className="bg-[#0B1221] text-gray-400 py-8 px-6  md:px-6">
-            <div className="container mx-auto">
+        <footer className="bg-[#0B1221] text-gray-400 w-full py-8 px-6  md:px-6">
+            <div className="container">
                 <div className="text-center md:text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-2 mb-6">
 
                     {/* Brand Section */}

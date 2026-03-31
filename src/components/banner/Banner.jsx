@@ -10,7 +10,7 @@ export default function Banner() {
                         src={banner}
                         className=" rounded-lg shadow-2xl"
                     />
-                    <div>
+                    <div className='mt-8 lg:mt-0'>
                         <h1 className="text-6xl font-bold">Supercharge Your Digital Workflow</h1>
                         <p className="py-6">
                             Access premium AI tools, design assets, templates, and productivity <br />

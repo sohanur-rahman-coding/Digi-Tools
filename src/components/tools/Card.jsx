@@ -23,7 +23,7 @@ export default function Card({ tool, isSelected, setisSelected }) {
 
     return (<div>
         <div >
-            <div className="card w-96 bg-base-100 shadow-sm text-left space-y-2">
+            <div className="card w-96 bg-base-100 shadow-sm text-left space-y-4">
                 <div className="card-body">
                     <span className={`badge badge-xs ${tagColor} ml-[75%]`}  >{tool.tag}</span>
                     <img className='max-w-8' src={tool.icon} alt="" />
