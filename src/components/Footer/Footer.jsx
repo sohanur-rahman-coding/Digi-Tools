@@ -5,7 +5,7 @@
 
 const Footer = () => {
     return (
-        <footer className="bg-[#0B1221] text-gray-400 w-full py-8 px-6  md:px-6">
+        <footer className="bg-[#0B1221] text-gray-400 w-full py-8 px-6 ">
             <div className="container">
                 <div className="md:mx-16 text-left grid grid-cols-2 lg:grid-cols-6  gap-4 md:gap-2 mb-6">
 
@@ -54,9 +54,9 @@ const Footer = () => {
 
                     {/* social links */}
 
-                    <div className="md:mx-16">
+                    <div className="lg:mx-10">
                         <h3 className="text-white text-xl font-semibold mb-5">Social Links</h3>
-                        <div className="flex gap-4 justify-center md:justify-start">
+                        <div className="flex gap-4 justify-start">
                             <a className="">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Section */}
-                <div className="border-t border-gray-800 pt-4 flex flex-col md:flex-row justify-between items-center text-md">
+                <div className="border-t w-11/12 mx-auto border-gray-800 pt-4 flex flex-col md:flex-row justify-between items-center text-md">
                     <p>© 2026 Digitools. All rights reserved.</p>
                     <div className="flex gap-8 mt-4 md:mt-0">
                         <a href="#" className="hover:text-white transition">Privacy Policy</a>
