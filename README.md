@@ -9,6 +9,7 @@
 ## 📝 Description
 
 DigiTools is a clean and modern React-based web application where users can explore **premium digital tools**, add them to a cart, and manage their selections. The UI is designed based on Figma, focusing on productivity, simplicity, and smooth user experience. It includes a dynamic product section and an interactive cart system with real-time updates.
+live link : digi-tools-a06.netlify.app
 
 ---
 
